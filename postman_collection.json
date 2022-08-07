@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "75b2a5ab-4f70-4f7e-9865-7b6c271723ea",
+		"name": "andorinha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Raíz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST_URL}}/andorinha",
+					"host": [
+						"{{HOST_URL}}"
+					],
+					"path": [
+						"andorinha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST_URL}}/andorinha/api/v1/youtube/info?url=https://www.youtube.com/watch?v=m7rROGxomSg",
+					"host": [
+						"{{HOST_URL}}"
+					],
+					"path": [
+						"andorinha",
+						"api",
+						"v1",
+						"youtube",
+						"info"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://www.youtube.com/watch?v=m7rROGxomSg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "postman",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{HOST_URL}}/andorinha/api/v1/youtube/download?format=best&url=https://www.youtube.com/watch?v=m7rROGxomSg",
+					"host": [
+						"{{HOST_URL}}"
+					],
+					"path": [
+						"andorinha",
+						"api",
+						"v1",
+						"youtube",
+						"download"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "best"
+						},
+						{
+							"key": "url",
+							"value": "https://www.youtube.com/watch?v=m7rROGxomSg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
